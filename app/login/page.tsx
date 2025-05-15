@@ -1,5 +1,7 @@
 "use client"
 
+import type React from "react"
+
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 import { Eye, EyeOff, Leaf } from "lucide-react"
@@ -15,7 +17,7 @@ export default function LoginPage() {
   const [password, setPassword] = useState("")
   const router = useRouter()
 
-  const handleLogin = (e) => {
+  const handleLogin = (e: React.FormEvent) => {
     e.preventDefault()
     // In a real app, validate credentials against API
     // For demo purposes, just redirect to dashboard
