@@ -76,7 +76,6 @@ export default function DashboardLayout({
     { href: "/dashboard/calculations", icon: Calculator, title: "Calculations" },
     { href: "/dashboard/tracking", icon: MapPin, title: "Tracking" },
     { href: "/dashboard/profile", icon: User, title: "Profile" },
-    { href: "/dashboard/settings", icon: Settings, title: "Settings" },
   ]
 
   const sidebar = (
